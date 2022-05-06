@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bree+Serif&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/37cf885c9d.js" crossorigin="anonymous"></script>
+    <style>
+ /* header */
+        #headerchild1{
+            display: flex;
+            justify-content: space-around;
+            background-color:#d4424c;
+            height: 30px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        #headerchild1>span{
+            margin: auto;
+        }
+        #headerchild2{
+        display: flex;
+        justify-content: space-between;
+      border:solid #f1f1f1;
+         height: 50px;
+         font-family: 'Bree Serif', serif;
+        }
+        #headerchild2>span{
+            margin: auto;
+        }
+        #input{
+            height: 25px;
+            width: 650px;
+            border-radius: 5px;
+        }
+        #search{
+            border-radius: 5px;
+            height: 30px;
+            width: 75px;
+            background-color: #00afef;
+            color:white;
+        }
+        #headerchild3{
+            display: flex;
+            height: 40px;
+            /* border: solid black; */
+        margin: auto;
+        font-family: 'Bree Serif', serif;
+        color: black;
+        }
+        #headerchild3>span{
+        margin-left: 30px;
+        margin-top: 10px;
+        }
+
+       /* product list */
+    .box{
+        height: 400px;
+    }
+    .bestseller{
+        display: flex;
+        justify-content: center;
+        /* border: solid black; */
+        height: 500px;
+        margin-left: 100px;
+        margin-right: 100px;
+        /* font-family: 'Open Sans', sans-serif; */
+        font-family: 'Open Sans', sans-serif;
+    }
+    .detail{
+        height: 300px;
+        width: 300px;
+        /* border: solid black; */
+        margin: auto;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        
+    }
+    .sellerbox{
+        display: flex;
+        border: solid #f1f1f1;
+        height: 500px;
+        width: 1000px;
+        margin: auto;
+    }
+    .sellerbox>div{
+       height: 100%;
+       width: 100%;
+       /* border: solid rgb(224, 14, 14); */
+    }
+    .carousel-cell{
+            /* border: solid rgb(12, 222, 75); */
+            height: 100%;
+            width: 300px;
+           margin-left: 20px;
+           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+           border-radius: 10px;
+           text-align: center;
+         line-height: 15px;
+         font-size: 15px;
+        }
+        .gg{
+            height: 300px;
+            width: 100%;
+            
+        }
+        #parent{
+            margin-left: 800px;
+        }
+        .cartb{
+            color:#00afef;
+            background-color: white;
+            border-radius: 10px;
+            border-color: #00afef;
+            width: 100%;
+            height: 50px;
+        }
+        .carousel-cell>button:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  cursor: pointer;
+}
+.textcolour{
+    color:#4d8c0e;
+    font-family: 'Roboto', sans-serif;
+}
+                                   /* intro slide */
+#intro{
+    height: 450px;
+    width: 100%;
+}
+.slide{
+        height:100%;
+        width:100%;
+       }
+  #intro>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:100%;
+        width:100%;
+  } 
+  .introimg{
+    height:100%;
+        width:100%; 
+  }   
+  .cartbuttonout{
+    height: 50px;
+    width: 150px;
+    color:white;
+            background-color: #00afef;
+            border-radius: 5px;
+            border-color: #00afef;
+  } 
+
+                                                       /* fooooooooooter */
+  #parentfooter{
+        border:solid #ececec;
+  height:790px;
+  width: 1250px;
+  margin:auto;
+       }
+       #childfooter1{
+           display: flex;
+           justify-content: space-around;
+           border:solid #ececec;
+        height: 100px;
+    
+       }
+       #childfooter2{
+        display: flex;
+           justify-content: space-between;
+           border:solid #ececec;
+        height: 150px;
+        font-family: 'Bree Serif', serif;
+       }
+       #childfooter2>span{
+           text-align: center;
+        
+       }
+       #childfooter3{
+           display: flex;
+           justify-content: space-around;
+        height: 400px;
+       border: solid #ececec;
+       font-family: 'Bree Serif', serif;
+       }
+       #childfooter4{
+  text-align: center;
+        height: 110px;
+       }
+       #childfooter5{
+           text-align: center;
+        height: 60px;
+        border:solid #ececec;
+       }
+       .footerlogo{
+           height: 90px;
+       }
+       .footerpayment{
+           height: 30px;
+       }
+       #videofooter{
+           display: flex;
+           /* justify-content: space-around; */
+           /* border:solid black; */
+           height: 430px;
+
+       }
+       #videofooter>div{
+           border:solid #ececec;
+           margin: auto;
+       }
+       #video{
+           height: 400px;
+           width: 550px;
+           border-radius: 8px;
+       }
+       #detail{
+           height: 400px;
+           width: 600px;
+           border-radius: 19px;
+
+       }
+       #detail1{
+           height:300px;
+           width: 600px;
+           /* border:solid rgb(216, 4, 4); */
+          margin-top: 70px;
+        
+       }
+       #detail1>span{
+        text-align: center;
+       
+       }
+       #videobutton{
+           height: 50px;
+           width:600px;
+           /* border: solid blue; */
+           display: flex;
+           justify-content: center;
+       }
+       #videobutton{
+           gap: 20px;
+       }
+       #videobutton>div>button{
+           height: 50px;
+           width: 170px;
+           color: white;
+           border-radius: 10px;
+           background-color: #00afef;
+       }
+      #plantimage{
+          /* border:solid black; */
+          height: 400px;
+          background-size: cover;
+          background-image: url("https://mamaearthp.imgix.net/wysiwyg/desktop_home_img.png?auto=format");
+      }
+      #plantimage1{
+          height: 350px;
+          color:#4d8c0e;
+          /* border:solid black; */
+         padding-left: 350px;
+         padding-top: 100px;
+         text-align: center;
+         font-family: 'Open Sans', sans-serif;
+      }
+      .anchorkey{
+          color: white;
+          font-size: 17px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div id="parentheader">
+        <!-- child==1 -->
+        <div id="headerchild1">
+         <span> Asia's Ist Brand with Made Safe Certified products</span>
+         <span>Free Shipping Above 399 |COD Available|Extra 5% OFF on Prepaid Orders| Shop Now</span>
+         <span><a href="sign up/signup.html"><i class="fa-solid fa-user-plus">sign up</i></a></span>
+        </div>
+        <!-- child 2 -->
+        <div  id="headerchild2">
+        <span>
+        <a href="./index.html"><img height="40px" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale"></a>
+        </span>
+        <span>
+            <span>
+          <a href="./searchbar/search.html"><input  id="input" placeholder="Search for Products"></a> 
+            </span>
+            <span>
+          <button id="search">Search</button>
+            </span>
+        </span>
+        <span>
+           <a href="./cart/cart.html"><i class="fa-solid fa-cart-arrow-down fa-1x">cart</i></a> 
+        </span>
+        <span>
+            <a href="login/login.html"><i class="fa-solid fa-user-plus">login</i></a>
+        </span>
+        </div>
+        <!-- child 3 -->
+        <div id="headerchild3">
+         <span>
+             <a href="index.html">HOME</a>
+         </span>
+         <span>
+            <a href="./baby/baby.html">BABY</a>
+         </span>
+         <span>
+            <a href="./beauty/beauty.html">BEAUTY</a>
+         </span>
+         <span>
+            <a href="./hair/hair.html">HAIR</a>
+         </span>
+         <span>
+            <a href="./face/face.html">FACE</a>
+         </span>
+         <span>
+            <a href="./body/body.html">BODY</a>
+         </span>
+         <span>
+            <a href="./giftpacks/giftpacks.html">GIFT PACKS</a>
+         </span>
+         <span>
+            <a href="./all product/all.html">All PRODUCTS</a>
+         </span>
+         <span>
+            <a href="./plant/plant.html">PLANT GOODNESS </a>
+         </span>
+         <span>
+            <a href="#!">BLOG</a>
+         </span>
+         <span>
+            <a href="#!">STORE LOCATORE</a>
+         </span>
+        </div>
+    </div>
+    
+  <!--  introduction slider-->
+  <div id="intro">
+  <div class="main-carousel" data-flickity='{"cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 2000, "pauseAutoPlayOnHover": false }'>
+    <div class="slide">
+ <img class="introimg"
+ src="https://images.ctfassets.net/66mrrren2unf/3sQE1O24Tz2h2g1EeAvGy1/d38d3bffc0dca32cb964ab13b091e32c/Desktop.jpg?q=40">
+    </div>
+    <div class="slide">
+<img class="introimg"
+src="https://images.ctfassets.net/66mrrren2unf/2nFAFSa68RorsrU94U5pO9/90708e3f5bd6f312d9911b63e4977a3e/desktop-body-wash.jpg?q=40">
+    </div>
+    <div class="slide">
+        <img class="introimg"
+        src="https://images.ctfassets.net/66mrrren2unf/5dElTf4nIm0q7zDEmWgU4j/b0ba9c8f7fc47184cb6a3c0349cecef1/Desktop_Henna-Paste-with-Logo.jpg?q=40">
+    </div>
+    <div class="slide">
+    <img class="introimg"
+    src="https://images.ctfassets.net/66mrrren2unf/OoKYuxKNlL96p4n6uytiG/02aecfff5b2170bf9fab1c1be850e17c/Desktop_Without_CTA.jpg?q=40">
+  </div>
+</div>
+</div>
+ <br><br>
+  <!-- first product slider  -->
+     <div>
+  <div  class="bestseller">
+      <div  class="detail">
+      <h1>Baby products</h1>
+      <p>Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.</p>
+      <button class="cartbuttonout"><a class="anchorkey"
+        href="./baby/baby.html">View All</a></button>
+    </div>
+    <!-- slider onion -->
+      <div class="sellerbox">
+        <div class="main-carousel" data-flickity='{  "cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 1000, "pauseAutoPlayOnHover": false }'>
+
+            <div class="carousel-cell">
+               <img 
+               class="gg"
+                src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+               <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                Vitamin C and Turmeric for Skin.....</h3></div>
+                <p>⭐5.5</p>
+                <h4>₹500</h4>
+                <button class="cartb">Add To Cart</button>
+            </div>
+            <div class="carousel-cell">
+                <img class="gg"
+                src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400">  
+                <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                    Hair Fall Control with Redensyl.</h3></div>
+                    <p>⭐5.5</p>
+                    <h4>₹500</h4>
+                    <button class="cartb">Add To Cart</button>
+            </div>
+            <div class="carousel-cell">
+                <img class="gg"
+                src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                    Shampoo, 250ml and Onion......</h3></div>
+                    <p>⭐5.5</p>
+                    <h4 class="textcolour">₹500</h4>
+                    <button class="cartb">Add To Cart</button>
+            </div>
+            <div class="carousel-cell">
+                <img class="gg"
+                src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=compress&fit=scale&w=400&h=400">
+                <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                    Hair Fall Control with Redensyl..</h3></div>
+                    <p>⭐5.5</p>
+                    <p>₹500</p>
+                    <button class="cartb">Add To Cart</button>
+                </div>
+                
+            <div class="carousel-cell">
+                <img 
+                class="gg"
+                 src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+                <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                 Vitamin C and Turmeric for Skin.....</h3></div>
+                 <p>⭐5.5</p>
+                 <h4>₹500</h4>
+                 <button class="cartb">Add To Cart</button>
+             </div>
+             <div class="carousel-cell">
+                <img class="gg"
+                src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                    Shampoo, 250ml and Onion......</h3></div>
+                    <p>⭐5.5</p>
+                    <h4 class="textcolour">₹500</h4>
+                    <button class="cartb">Add To Cart</button>
+            </div>
+                
+            </div>
+       </div>
+  </div>
+   </div>
+  <br><br>
+  <!-- second product slider  -->
+     <div>
+    <div class="bestseller">
+        <div  class="detail">
+        <h1>Hair Products</h1>
+        <p>Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.</p>
+        <button class="cartbuttonout"><a class="anchorkey" href="./hair/hair.html">VIEW ALL</a></button>
+        
+      </div>
+      <!-- slider onion -->
+        <div  class="sellerbox">
+          <div class="main-carousel" data-flickity='{  "cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 1500,
+          "pauseAutoPlayOnHover": false }'>
+  
+              <div class="carousel-cell">
+                 <img 
+                 class="gg"
+                  src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+                 <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                  Vitamin C and Turmeric for Skin.....</h3></div>
+                  <p>⭐5.5</p>
+                  <h4>₹500</h4>
+                  <button class="cartb">Add To Cart</button>
+              </div>
+              <div class="carousel-cell">
+                  <img class="gg"
+                  src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400">  
+                  <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                      Hair Fall Control with Redensyl.</h3></div>
+                      <p>⭐5.5</p>
+                      <h4>₹500</h4>
+                      <button class="cartb">Add To Cart</button>
+              </div>
+              <div class="carousel-cell">
+                  <img class="gg"
+                  src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                  <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                      Shampoo, 250ml and Onion.......</h3></div>
+                      <p>⭐5.5</p>
+                      <h4 class="textcolour">₹500</h4>
+                      <button class="cartb">Add To Cart</button>
+              </div>
+              <div class="carousel-cell">
+                  <img class="gg"
+                  src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=compress&fit=scale&w=400&h=400">
+                  <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                      Hair Fall Control with Redensylld</h3></div>
+                      <p>⭐5.5</p>
+                      <p>₹500</p>
+                      <button class="cartb">Add To Cart</button>
+                  </div>
+              </div>
+         </div>
+    </div>
+     </div>
+     <br><br>
+     <!-- third product slider -->
+     <div>
+        <div class="bestseller">
+            <div  class="detail">
+            <h1>Beauty Products</h1>
+            <p>Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.</p>
+            <button class="cartbuttonout"><a class="anchorkey" href="./beauty/beauty.html">VIEW ALL</a></button>
+          </div>
+          <!-- slider onion -->
+            <div  class="sellerbox">
+              <div class="main-carousel" data-flickity='{  "cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 2000,
+              "pauseAutoPlayOnHover": false }'>
+      
+                  <div class="carousel-cell">
+                     <img 
+                     class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+                     <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                      Vitamin C and Turmeric for Skin.....</h3></div>
+                      <p>⭐5.5</p>
+                      <h4>₹500</h4>
+                      <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400">  
+                      <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                          Hair Fall Control with Redensyl.</h3></div>
+                          <p>⭐5.5</p>
+                          <h4>₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                      <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                          Shampoo, 250ml and Onion.......</h3></div>
+                          <p>⭐5.5</p>
+                          <h4 class="textcolour">₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=compress&fit=scale&w=400&h=400">
+                      <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                          Hair Fall Control with Redensylld</h3></div>
+                          <p>⭐5.5</p>
+                          <p>₹500</p>
+                          <button class="cartb">Add To Cart</button>
+                      </div>
+                  </div>
+             </div>
+        </div>
+         </div>
+         <br><br>
+         <!-- fourth product slider -->
+    <div>
+            <div class="bestseller">
+                <div  class="detail">
+                <h1>Face Products</h1>
+                <p>Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.</p>
+                <button class=cartbuttonout><a class="anchorkey"
+                    href="./all product/all.html">VIEW ALL</a></button>
+              </div>
+              <!-- slider onion -->
+                <div  class="sellerbox">
+                  <div class="main-carousel" data-flickity='{  "cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 2500,
+                  "pauseAutoPlayOnHover": false }'>
+          
+                      <div class="carousel-cell">
+                         <img 
+                         class="gg"
+                          src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+                         <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                          Vitamin C and Turmeric for Skin.....</h3></div>
+                          <p>⭐5.5</p>
+                          <h4>₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                      </div>
+                      <div class="carousel-cell">
+                          <img class="gg"
+                          src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400">  
+                          <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                              Hair Fall Control with Redensyl.</h3></div>
+                              <p>⭐5.5</p>
+                              <h4>₹500</h4>
+                              <button class="cartb">Add To Cart</button>
+                      </div>
+                      <div class="carousel-cell">
+                          <img class="gg"
+                          src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                          <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                              Shampoo, 250ml and Onion.......</h3></div>
+                              <p>⭐5.5</p>
+                              <h4 class="textcolour">₹500</h4>
+                              <button class="cartb">Add To Cart</button>
+                      </div>
+                      <div class="carousel-cell">
+                          <img class="gg"
+                          src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=compress&fit=scale&w=400&h=400">
+                          <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                              Hair Fall Control with Redensylld</h3></div>
+                              <p>⭐5.5</p>
+                              <p>₹500</p>
+                              <button class="cartb">Add To Cart</button>
+                          </div>
+                      </div>
+                 </div>
+            </div>
+    </div>
+     <br><br>
+
+     <!-- fifth product slider -->
+     <div>
+        <div class="bestseller">
+            <div  class="detail">
+            <h1>Gift Packs</h1>
+            <p>Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.</p>
+            <button class="cartbuttonout"> <a class="anchorkey"
+                href="./giftpacks/giftpacks.html">VIEW AL</a></button>
+
+          </div>
+          <!-- slider onion -->
+            <div  class="sellerbox">
+              <div class="main-carousel" data-flickity='{  "cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 3000,
+              "pauseAutoPlayOnHover": false }'>
+      
+                  <div class="carousel-cell">
+                     <img 
+                     class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+                     <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                      Vitamin C and Turmeric for Skin.....</h3></div>
+                      <p>⭐5.5</p>
+                      <h4>₹500</h4>
+                      <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400">  
+                      <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                          Hair Fall Control with Redensyl.</h3></div>
+                          <p>⭐5.5</p>
+                          <h4>₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                      <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                          Shampoo, 250ml and Onion.......</h3></div>
+                          <p>⭐5.5</p>
+                          <h4 class="textcolour">₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=compress&fit=scale&w=400&h=400">
+                      <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                          Hair Fall Control with Redensylld</h3></div>
+                          <p>⭐5.5</p>
+                          <p>₹500</p>
+                          <button class="cartb">Add To Cart</button>
+                      </div>
+                  </div>
+             </div>
+        </div>
+         </div>
+         <br><br>
+    <!-- sixth slider   -->
+    <div>
+        <div class="bestseller">
+            <div  class="detail">
+            <h1>Body Products</h1>
+            <p>Explore best-selling safe, natural, and 100% toxin-free baby and beauty products from Mamaearth. Get amazing deals and start your toxin-free skin, hair, and baby care journey.</p>
+            <button class="cartbuttonout"><a class="anchorkey"
+                href="./body/body.html">VIEW ALL</a></button>
+          </div>
+          <!-- slider onion -->
+            <div  class="sellerbox">
+              <div class="main-carousel" data-flickity='{  "cellAlign": "left","contain": true,"autoPlay": true ,"autoPlay": 3500,
+              "pauseAutoPlayOnHover": false }'>
+      
+                  <div class="carousel-cell">
+                     <img 
+                     class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400"> 
+                     <div><h3 class="textcolour">Vitamin C Foaming Face Wash with
+                      Vitamin C and Turmeric for Skin.....</h3></div>
+                      <p>⭐5.5</p>
+                      <h4>₹500</h4>
+                      <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400">  
+                      <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                          Hair Fall Control with Redensyl.</h3></div>
+                          <p>⭐5.5</p>
+                          <h4>₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_foaming_face_wash_1.jpg?auto=compress&fit=scale&w=400&h=400">  
+                      <div><h3 class="textcolour">Hair Regrowth Combo:Onion
+                          Shampoo, 250ml and Onion.......</h3></div>
+                          <p>⭐5.5</p>
+                          <h4 class="textcolour">₹500</h4>
+                          <button class="cartb">Add To Cart</button>
+                  </div>
+                  <div class="carousel-cell">
+                      <img class="gg"
+                      src="https://honasa-mamaearth-production.imgix.net/_/o/_onion-oil-150ml_.jpg?auto=compress&fit=scale&w=400&h=400">
+                      <div><h3 class="textcolour">Onion Hair Oil for Hair Regrowth and
+                          Hair Fall Control with Redensylld</h3></div>
+                          <p>⭐5.5</p>
+                          <p>₹500</p>
+                          <button class="cartb">Add To Cart</button>
+                      </div>
+                  </div>
+             </div>
+        </div>
+         </div>
+         <br><br>
+    <!-- video section -->
+
+ <div id="videofooter">
+    <!-- video? -->
+    <div  id="video">
+        <iframe width="550" height="400"  src="https://www.youtube.com/embed/YROZybuYGUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<!-- detail -->
+  <div id="detail">
+     <div id="detail1">
+      <span>
+          <h3 style="color:#00afef;
+           font-family: 'Bree Serif', serif;">Our Goodness Promise</h3>
+          <p>At Mamaearth, we live to spread a little love and goodness every day. We believe that goodness isn’t a superpower, nor a special gift, it’s inside all of us and it shows in the little choices we make. Our mission is to bring you the best of nature through our purest and most nurturing products that are made without any toxins or harmful chemicals. For us goodness also means being good to the earth. Which is why we recycle more plastic than we use and we're PETA Certified - which means we never test on animals. This is our #GoodnessInside.</p>
+      </span>
+    <div id="videobutton">
+       <div id="videobutton1">
+           <button><a style="color:white" href="./all product/all.html">SHOP NOW</button></a>
+       </div>
+       <div>
+        <button><a style="color:white"
+            href="./plant/plant.html">OUR PLEDGE</a></button>
+          </div>
+        </div>
+      </div>
+  </div>
+ </div>
+
+<!-- plant image -->
+
+<div id="plantimage">
+
+ <div id="plantimage1">
+  <h1>WE PLANT GOODNESS</h1>
+  <h2>300018</h2>
+  <h3>Trees have got life already...
+    Everytime you buy from us, we plant more trees!</h3>
+    <h1><a style="color: #4d8c0e;
+        font-size: 25px;"
+        href="./plant/plant.html">KNOW MORE</a></h1>
+ </div>
+</div>
+
+    <!-- foooter -->
+    <div id="parentfooter">
+        <div id="childfooter1">
+           <div>
+               <i class="fa-solid fa-truck-fast fa-4x"></i>
+               <p>Free Shipping On Orders Above Rs.399</p>
+        </div>
+             <div> 
+                 <i class="fa-solid fa-wallet fa-4x"></i>
+             <p> COD Available @ Rs. 40 Per Order</p>
+            </div>   
+            
+            
+         <div>
+          <h2>Have Queries or Concerns?</h2> 
+         <button style="color: #00afef; border: solid #00afef ;height:30px ; width: 150px;">CONTACT US</button>
+         </div>
+     </div>
+            <div id="childfooter2">
+                <!-- payment -->
+       <span>
+              <p>PAYMENT</p>
+              <p>100% Payment Protection, Easy Return Policy</p>
+         <img class="footerpayment"
+         src="https://mamaearthp.imgix.net/wysiwyg/visa2x.png?auto=format&fit=scale"> 
+         <img class="footerpayment"
+          src="https://mamaearthp.imgix.net/wysiwyg/master_card2x.png?auto=format&fit=scale"> 
+         <img class="footerpayment"
+          src="https://mamaearthp.imgix.net/wysiwyg/american_express2x.png?auto=format&fit=scale"> 
+         <img class="footerpayment"
+         src="https://mamaearthp.imgix.net/wysiwyg/rupay2x.png?auto=format&fit=scale"> 
+        </span>  
+        <!-- certifiec   -->
+ 
+            <span> <img class="footerlogo"
+                src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x1002x.png?auto=format" alt="">
+                <p>Dermatologically Tested</p>
+            </span>
+           <span><img class="footerlogo"
+            src="https://mamaearthp.imgix.net/wysiwyg/fda-100x1002x.png?auto=format" alt="">
+            <p>FDA Approved</p>
+          </span>
+              
+         <span> <img class="footerlogo"
+            src="https://mamaearthp.imgix.net/wysiwyg/MadeSafeImages13Jan/madesafe13janlogo.png?auto=format" alt=""> 
+            <p>Made Safe Certified</p>
+         </span>
+            </div>
+            <div id="childfooter3">
+              <span>
+                <dl>
+                     <h2>USEFUL LINKS</h2>
+                      <dt>Privacy Policy</dt><br>
+                      <dt>Return</dt><br>
+                      <dt>Term & Conditions</dt><br>
+                      <dt>FAQ</dt><br>
+                      <dt>WE're Safe</dt><br>
+                      <dt>Track Order</dt><br>
+                      <dt>Contact Us</dt><br>
+                      <dt>About US</dt>
+                </dl>
+              </span>
+              <span>
+                  <dl id="CATEGORIES">
+                      <h2>CATEGORIES</h2>
+                      <dt><a href="./baby/baby.html">Baby</a></dt><br>
+                      <dt><a href="./beauty/beauty.html">Beauty</a></dt><br>
+                      <dt><a href="./hair/hair.html">Hair</a></dt><br>
+                      <dt><a href="./face/face.html">Face</a></dt><br>
+                      <dt><a href="./body/body.html">Body</a></dt><br>
+                      <dt><a href="./giftpacks/giftpacks.html">Gift Pack</a></dt>
+                  </dl>
+              </span>
+              <span>
+                  <h2>MY ACCOUNT</h2>
+                  <dl>Account</dl>
+                  <dl>Orders</dl>
+                  <dl>Address</dl>
+              </span>
+              <span>
+                  <img style="height: 250px;"
+                  src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png?auto=format">
+              </span>
+            </div>
+            <div id="childfooter4">
+                <span><h3>`SHOW US SOME <i class="fa fa-heart" style="color: red;"></i> ON SOCIAL MEDIA`</h3></span>
+                <span>
+                    
+                    <i class="fa-brands fa-instagram-square fa-2x"></i>
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                    <i class="fa-brands fa-pinterest fa-2x"></i>
+                    <i class="fa-solid fa-envelope fa-2x "></i>
+                    <i class="fa-brands fa-youtube fa-2x"></i>
+                </span>
+
+            </div>
+            <div id="childfooter5">
+               <span><h4>© 2022 Honasa Consumer Pvt. Ltd. All Rights Reserved</h4></span>
+            </div>
+    </div>     
+</body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+
+
+</script>

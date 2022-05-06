@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bree+Serif&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+#parent{
+    display: flex;
+    height: 700px;
+    border: solid #82c341;
+    justify-content: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQ_-27T2G_OX51FNnFwymt9DojptRtnFeLA&usqp=CAU);
+background-size: cover;
+font-family: 'Open Sans', sans-serif;
+}
+#child{
+   
+    height: 600px;
+    width: 500px;
+    margin:auto;
+}
+
+#form>input{
+   
+    border: solid #82c341;
+ height: 45px;
+ width: 100%;
+}
+#submit{
+    border: solid #82c341;
+ height: 50px;
+ width: 100%;  
+} 
+#submit:hover {
+                    box-shadow: 0px 0px 50px rgba(107, 233, 10, 0.6);
+                    cursor: pointer;
+                  }
+#new{
+    border: solid #82c341;
+ height: 50px;
+ width: 100%;  
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+          <div>
+          <img style="height: 100px;
+          width: 100%;
+          text-align: center;" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+          <h1>Create Account</h1>
+          </div>
+          <div id="form">
+             
+              <input id="email" placeholder="Enter Your Email id" type="email">
+              <br><br>
+              <input id="password" placeholder="Enter Your Password"  type="email">
+              <br><br>
+              <button id="submit">Continue</button>
+             
+          </div>
+          <div>
+<h2>New To MamaEarth? </h2>
+<button id="new"><a href="../sign up/signup.html">Create Your MamaEarth Account</a></button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let values = JSON.parse(localStorage.getItem("inputvalues"))||[]
+
+    document.querySelector("#submit").addEventListener("click",function(){
+        event.preventDefault()
+        let email= document.getElementById("email").value
+    let password = document.getElementById("password").value
+    let flag= false;
+ for(var i=0; i<values.length ; i++){
+     if(email===values[i].email&&password===values[i].password){
+         flag=true
+     }
+     
+ }
+ if(flag==true){
+        alert("welcome to mamaearth")
+         window.location.href="../index.html"
+     }
+     else {
+        alert("invalid Credentials")
+     }
+
+    })
+    
+
+</script>
