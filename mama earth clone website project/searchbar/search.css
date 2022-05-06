@@ -1,0 +1,92 @@
+#headerchild1{
+    display: flex;
+    justify-content: space-around;
+    background-color:#d4424c;
+    height: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#headerchild1>span{
+    margin: auto;
+}
+#headerchild2{
+display: flex;
+justify-content: space-between;
+border:solid #f1f1f1;
+ height: 50px;
+ font-family: 'Bree Serif', serif;
+}
+#headerchild2>span{
+    margin: auto;
+}
+#search{
+    height: 25px;
+    width: 650px;
+    border-radius: 5px;
+}
+
+#headerchild3{
+    display: flex;
+    height: 40px;
+    /* border: solid black; */
+margin: auto;
+font-family: 'Bree Serif', serif;
+color: black;
+}
+#headerchild3>span{
+margin-left: 30px;
+margin-top: 10px;
+}
+#beautydata{
+display: grid;
+grid-template-columns: repeat(4,3fr);
+/* border: solid rgb(6, 6, 6); */
+grid-row-gap: 25px;
+
+}
+.beautyimgdiv{
+height:225px ;
+/* border: solid rgb(6, 6, 6); */
+}
+
+.beautytextdiv{
+/* border: solid rgb(223, 60, 11);  */
+height: 200px;
+text-align: center;
+line-height: normal;
+font-size: 15px;
+}
+.beautycartbutton{
+height: 50px;
+width: 100%;
+border: solid #00afef;
+color:#00afef;
+background-color: white;
+border-radius: 15px;
+}
+.beautycartbutton:hover {
+    box-shadow: 0px 0px 50px rgba(107, 233, 10, 0.6);
+    cursor: pointer;
+  }
+
+.beautyproduct{
+height: 500px;
+width: 280px;
+/* border: solid rgb(7, 232, 74); */
+margin: auto;
+border-radius: 15px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.beautyproimage{
+height:225px;
+}
+#beautyparent{
+/* border: solid rgb(200, 14, 14); */
+margin-left: 150px;
+margin-right: 150px;
+}
+
+#beautysliderparent{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
