@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#parent{
+    display: flex;
+    height: 700px;
+    border: solid #82c341;
+    justify-content: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQ_-27T2G_OX51FNnFwymt9DojptRtnFeLA&usqp=CAU);
+background-size: cover;
+}
+#child{
+   
+    height: 600px;
+    width: 500px;
+    margin:auto;
+}
+
+#form>input{
+   
+    border: solid #82c341;
+ height: 45px;
+ width: 100%;
+}
+#submit{
+    border: solid #82c341;
+ height: 50px;
+ width: 100%;  
+} 
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+          <div>
+          <img style="height: 100px;
+          width: 100%;
+          text-align: center;" src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+          <h1>Create Account</h1>
+          </div>
+          <div id="form">
+             
+              <input id="name" placeholder="enter your name" type="text" required>
+              <br><br>
+              <input id="number" placeholder="Enter Your Mobile Number" type="number">
+              <br><br>
+              <input id="email" placeholder="Enter Your Email id" type="email">
+              <br><br>
+              <input id="password" placeholder="Enter Your Password"  type="email">
+              <br><br>
+              <button id="submit">Continue</button>
+          </div>
+          <div>
+<h2>Already Have an account <a href="../login/login.html">signin</a></h2>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+ document.querySelector("#submit").addEventListener("click",formvalue)||[]
+
+ let arr = JSON.parse(localStorage.getItem("inputvalues"))||[]
+
+ function formvalue(event){
+     event.preventDefault()
+  let name=document.getElementById("name").value
+  let number = document.getElementById("number").value
+  let email= document.getElementById("email").value
+  let password = document.getElementById("password").value
+
+  let obj= {
+      name:name,
+      number:number,
+      email:email,
+      password,
+  }
+ 
+  arr.push(obj)
+  localStorage.setItem("inputvalues",JSON.stringify(arr))
+    window.location.href="../login/login.html"
+ }
+
+
+</script>
